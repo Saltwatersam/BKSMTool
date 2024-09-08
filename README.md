@@ -1,4 +1,4 @@
-# BKSMTool (Under Development)
+# BKSMTool
 BKSMTool is an open source C# GUI/CLI created by [Saltwatersam](https://github.com/Saltwatersam).
 
 This GUI/CLI allows users to modify *.bnk files used by Wwise.
