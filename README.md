@@ -3,6 +3,10 @@ BKSMTool is an open source C# GUI/CLI created by [Saltwatersam](https://github.c
 
 This GUI/CLI allows users to modify *.bnk files used by Wwise.
 
+## System requirment
+
+Windows 10+ x64 (with .net frameworks 4.8.1)
+
 ## License
 
 This project is licensed under the [GNU General Public License v3.0 (GPLv3)](gpl-3.0.txt).
