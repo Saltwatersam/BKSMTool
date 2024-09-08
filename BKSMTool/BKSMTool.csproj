@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{927A2995-DE35-4A9A-9C9F-46EE72A484A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BKSMTool</RootNamespace>
+    <AssemblyName>BKSMTool</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="audio_player_converter\BassInstancing.cs" />
+    <Compile Include="audio_player_converter\PlayerEngine.cs" />
+    <Compile Include="CLI\CommandLineInterfaceHandler.cs" />
+    <Compile Include="CLI\Commands\Command.cs" />
+    <Compile Include="CLI\Commands\ExtractAllCommand.cs" />
+    <Compile Include="CLI\Commands\HelpCommand.cs" />
+    <Compile Include="CLI\Commands\VersionCommand .cs" />
+    <Compile Include="Controls\AdvancedTrackbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AdvancedTrackbar.designer.cs">
+      <DependentUpon>AdvancedTrackbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NotSelectableButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\AudioSavedStateRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerHiddableTrackbarVolume.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerHiddableTrackbarVolume.Designer.cs">
+      <DependentUpon>PlayerHiddableTrackbarVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerLabelAudioDuration.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerLabelAudioName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerLabelAudioPosition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerTrackBarAudioPosition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\PlayerTrackBarAudioPosition.designer.cs">
+      <DependentUpon>PlayerTrackBarAudioPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayerEngine\SoundPlayerStateRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OpenFileDialogWIthFlags.cs" />
+    <Compile Include="Controls\SaveFileDialogWIthFlags.cs" />
+    <Compile Include="Files\AudioExtractionHandler.cs" />
+    <Compile Include="Files\BNKFileHandler.cs" />
+    <Compile Include="Files\File Audio\AudioFile.cs" />
+    <Compile Include="Files\File Audio\AudioOperations.cs" />
+    <Compile Include="Files\File Audio\RIFF WAVE\AudioWaveFormatEx.cs" />
+    <Compile Include="Files\File Audio\RIFF WAVE\AudioWaveFormatExtensible.cs" />
+    <Compile Include="Files\File Audio\RIFF WAVE\IMA_ADPCM\WemImaAdpcm.cs" />
+    <Compile Include="Files\File Audio\RIFF WAVE\PCM\WemPcm.cs" />
+    <Compile Include="Files\File BNK\Bnk.cs" />
+    <Compile Include="Files\File BNK\BnkSectionEnumerator.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\BKHD.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\DATA.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\DIDX.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\ENVS.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\FOURCC_STRUCT.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\FXPR.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\HIRC.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\INIT.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\PLAT.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\STID.cs" />
+    <Compile Include="Files\File BNK\SECTIONS\STMG.cs" />
+    <Compile Include="Files\File WEM\Wem.cs" />
+    <Compile Include="Files\File WEM\WemCommand.cs" />
+    <Compile Include="Files\File WEM\WemTypesEnumerator.cs" />
+    <Compile Include="Files\FileInformation.cs" />
+    <Compile Include="Files\FileOperations.cs" />
+    <Compile Include="Files\WemReplacementHandler.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\ConfigManager.cs" />
+    <Compile Include="Miscellaneous\Logger.cs" />
+    <Compile Include="Miscellaneous\NativeMethods.cs" />
+    <Compile Include="Miscellaneous\ProgressQueue.cs" />
+    <Compile Include="Miscellaneous\UndoRedoManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AdvancedTrackbar.resx">
+      <DependentUpon>AdvancedTrackbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PlayerEngine\PlayerHiddableTrackbarVolume.resx">
+      <DependentUpon>PlayerHiddableTrackbarVolume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PlayerEngine\PlayerTrackBarAudioPosition.resx">
+      <DependentUpon>PlayerTrackBarAudioPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\packed_codebooks_aoTuV_603.bin" />
+    <None Include="Resources\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bass.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bassenc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bassenc_mp3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bassenc_ogg.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="icon.ico" />
+    <None Include="Resources\Volume-VeryLow.png" />
+    <None Include="Resources\Volume-Mute.png" />
+    <None Include="Resources\Volume-Medium.png" />
+    <None Include="Resources\Volume-Low.png" />
+    <None Include="Resources\Volume-High.png" />
+    <None Include="Resources\turn-right.png" />
+    <None Include="Resources\turn-left.png" />
+    <None Include="Resources\SingleButton.png" />
+    <None Include="Resources\PlayButton.png" />
+    <None Include="Resources\PauseButton.png" />
+    <None Include="Resources\NextButton.png" />
+    <None Include="Resources\LoopButton.png" />
+    <None Include="Resources\Loop1Button.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\LastButton.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\downloadAll.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\delete-folder.png" />
+    <None Include="Resources\change sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManagedBass-3.1.1\src\AddOns\BassEnc\Desktop\ManagedBass.Enc.csproj">
+      <Project>{3a0605ad-4dfa-4220-a9fe-03c6df5a29ff}</Project>
+      <Name>ManagedBass.Enc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagedBass-3.1.1\src\Bass\Desktop\ManagedBass.csproj">
+      <Project>{84ea3fa8-8d79-4111-bf88-1fd1a883f15a}</Project>
+      <Name>ManagedBass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectListView\ObjectListView\ObjectListView.csproj">
+      <Project>{18feda0c-d147-4286-b39a-01204808106a}</Project>
+      <Name>ObjectListView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RevorbStd\RevorbStd.csproj">
+      <Project>{6ae8d4dc-d754-4361-8e94-f37caa936d1a}</Project>
+      <Name>RevorbStd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEMSharp-1.0\WEMSharp\WEMSharp.csproj">
+      <Project>{2edfd763-c9cf-459e-9227-afebcad33850}</Project>
+      <Name>WEMSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

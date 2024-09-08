@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKSMTool", "BKSMTool\BKSMTool.csproj", "{927A2995-DE35-4A9A-9C9F-46EE72A484A2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BKSMTool-installer", "BKSMTool-installer\BKSMTool-installer.vdproj", "{D080B80E-B315-4CFE-8336-1CDD56937BA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedBass", "ManagedBass-3.1.1\src\Bass\Desktop\ManagedBass.csproj", "{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedBass.Enc", "ManagedBass-3.1.1\src\AddOns\BassEnc\Desktop\ManagedBass.Enc.csproj", "{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectListView", "ObjectListView\ObjectListView\ObjectListView.csproj", "{18FEDA0C-D147-4286-B39A-01204808106A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevorbStd", "RevorbStd\RevorbStd.csproj", "{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEMSharp", "WEMSharp-1.0\WEMSharp\WEMSharp.csproj", "{2EDFD763-C9CF-459E-9227-AFEBCAD33850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Addons", "Addons", "{6D688C03-C6AD-4DA6-9FF1-284F2DB07454}"
+	ProjectSection(SolutionItems) = preProject
+		BKSMTool\bass.dll = BKSMTool\bass.dll
+		BKSMTool\bassenc.dll = BKSMTool\bassenc.dll
+		BKSMTool\bassenc_mp3.dll = BKSMTool\bassenc_mp3.dll
+		BKSMTool\bassenc_ogg.dll = BKSMTool\bassenc_ogg.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Debug|x64.Build.0 = Debug|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|x64.ActiveCfg = Release|x64
+		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|x64.Build.0 = Release|x64
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|Any CPU.ActiveCfg = Debug
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|Any CPU.Build.0 = Debug
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|x64.ActiveCfg = Debug
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|x64.Build.0 = Debug
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|Any CPU.ActiveCfg = Release
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|Any CPU.Build.0 = Release
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|x64.ActiveCfg = Release
+		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|x64.Build.0 = Release
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|x64.ActiveCfg = Debug|x64
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|x64.Build.0 = Debug|x64
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Release|x64.ActiveCfg = Release|x64
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Release|x64.Build.0 = Release|x64
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Debug|x64.ActiveCfg = Debug|x64
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Debug|x64.Build.0 = Debug|x64
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Release|x64.ActiveCfg = Release|x64
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}.Release|x64.Build.0 = Release|x64
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|x64.ActiveCfg = Debug|x64
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|x64.Build.0 = Debug|x64
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|x64.ActiveCfg = Release|x64
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|x64.Build.0 = Release|x64
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Debug|x64.ActiveCfg = Debug|x64
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Debug|x64.Build.0 = Debug|x64
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Release|x64.ActiveCfg = Release|x64
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A}.Release|x64.Build.0 = Release|x64
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Debug|x64.ActiveCfg = Debug|x64
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Debug|x64.Build.0 = Debug|x64
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|x64.ActiveCfg = Release|x64
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A} = {6D688C03-C6AD-4DA6-9FF1-284F2DB07454}
+		{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF} = {6D688C03-C6AD-4DA6-9FF1-284F2DB07454}
+		{18FEDA0C-D147-4286-B39A-01204808106A} = {6D688C03-C6AD-4DA6-9FF1-284F2DB07454}
+		{6AE8D4DC-D754-4361-8E94-F37CAA936D1A} = {6D688C03-C6AD-4DA6-9FF1-284F2DB07454}
+		{2EDFD763-C9CF-459E-9227-AFEBCAD33850} = {6D688C03-C6AD-4DA6-9FF1-284F2DB07454}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB475AEF-3A8D-4320-8EA9-0C6EC8126FDF}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ManagedBass-3.1.1\src\AddOns\BassEnc\Shared\Shared.projitems*{3a0605ad-4dfa-4220-a9fe-03c6df5a29ff}*SharedItemsImports = 5
+		ManagedBass-3.1.1\src\Bass\Shared\Shared.projitems*{84ea3fa8-8d79-4111-bf88-1fd1a883f15a}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
