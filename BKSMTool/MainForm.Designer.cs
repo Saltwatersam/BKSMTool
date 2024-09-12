@@ -33,12 +33,12 @@ namespace BKSMTool
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle1 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle2 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle3 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle4 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle5 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle6 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle7 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle8 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle9 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle10 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle11 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle12 = new BrightIdeasSoftware.HeaderStateStyle();
             this.statusStripForFileStatus = new System.Windows.Forms.StatusStrip();
             this.toolStrip_ProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStrip_LabelForStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -99,6 +99,9 @@ namespace BKSMTool
             this.audioSavedStateRenderer1 = new BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer();
             this.panel2 = new System.Windows.Forms.Panel();
             this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutBKSMToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripForFileStatus.SuspendLayout();
             this.gpBox_FilterBox.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -141,30 +144,30 @@ namespace BKSMTool
             // 
             // headerFormatStyle2
             // 
-            headerStateStyle1.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle1.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Hot = headerStateStyle1;
-            headerStateStyle2.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle2.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Normal = headerStateStyle2;
-            headerStateStyle3.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle3.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Pressed = headerStateStyle3;
+            headerStateStyle7.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle7.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Hot = headerStateStyle7;
+            headerStateStyle8.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle8.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Normal = headerStateStyle8;
+            headerStateStyle9.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle9.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Pressed = headerStateStyle9;
             // 
             // headerFormatStyle1
             // 
-            headerStateStyle4.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle4.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle4.FrameWidth = 2F;
-            this.headerFormatStyle1.Hot = headerStateStyle4;
-            headerStateStyle5.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle5.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle5.FrameWidth = 2F;
-            this.headerFormatStyle1.Normal = headerStateStyle5;
-            headerStateStyle6.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle6.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle6.FrameWidth = 2F;
-            this.headerFormatStyle1.Pressed = headerStateStyle6;
+            headerStateStyle10.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle10.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle10.FrameWidth = 2F;
+            this.headerFormatStyle1.Hot = headerStateStyle10;
+            headerStateStyle11.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle11.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle11.FrameWidth = 2F;
+            this.headerFormatStyle1.Normal = headerStateStyle11;
+            headerStateStyle12.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle12.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle12.FrameWidth = 2F;
+            this.headerFormatStyle1.Pressed = headerStateStyle12;
             // 
             // gpBox_FilterBox
             // 
@@ -195,7 +198,8 @@ namespace BKSMTool
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem_FILE,
             this.toolStripMenuItem_EDIT,
-            this.optionsToolStripMenuItem});
+            this.optionsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.menuStrip.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
@@ -733,6 +737,24 @@ namespace BKSMTool
             this.olvColumn1.Sortable = false;
             resources.ApplyResources(this.olvColumn1, "olvColumn1");
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutBKSMToolToolStripMenuItem,
+            this.checkForUpdateToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            // 
+            // aboutBKSMToolToolStripMenuItem
+            // 
+            this.aboutBKSMToolToolStripMenuItem.Name = "aboutBKSMToolToolStripMenuItem";
+            resources.ApplyResources(this.aboutBKSMToolToolStripMenuItem, "aboutBKSMToolToolStripMenuItem");
+            // 
+            // checkForUpdateToolStripMenuItem
+            // 
+            this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
+            resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -830,6 +852,9 @@ namespace BKSMTool
         private AudioSavedStateRenderer audioSavedStateRenderer1;
         private BrightIdeasSoftware.OLVColumn OLVC_AudioState;
         private BrightIdeasSoftware.OLVColumn OLVC_IsModified;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem aboutBKSMToolToolStripMenuItem;
+        private ToolStripMenuItem checkForUpdateToolStripMenuItem;
     }
 }
 

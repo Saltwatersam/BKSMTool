@@ -5,8 +5,6 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKSMTool", "BKSMTool\BKSMTool.csproj", "{927A2995-DE35-4A9A-9C9F-46EE72A484A2}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BKSMTool-installer", "BKSMTool-installer\BKSMTool-installer.vdproj", "{D080B80E-B315-4CFE-8336-1CDD56937BA4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedBass", "ManagedBass-3.1.1\src\Bass\Desktop\ManagedBass.csproj", "{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedBass.Enc", "ManagedBass-3.1.1\src\AddOns\BassEnc\Desktop\ManagedBass.Enc.csproj", "{3A0605AD-4DFA-4220-A9FE-03C6DF5A29FF}"
@@ -25,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Addons", "Addons", "{6D688C
 		BKSMTool\bassenc_ogg.dll = BKSMTool\bassenc_ogg.dll
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupProject", "SetupProject\SetupProject.vdproj", "{A8085DCD-0887-4424-873B-EF432ECF0F1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,14 +41,6 @@ Global
 		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|x64.ActiveCfg = Release|x64
 		{927A2995-DE35-4A9A-9C9F-46EE72A484A2}.Release|x64.Build.0 = Release|x64
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|Any CPU.ActiveCfg = Debug
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|Any CPU.Build.0 = Debug
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|x64.ActiveCfg = Debug
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Debug|x64.Build.0 = Debug
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|Any CPU.ActiveCfg = Release
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|Any CPU.Build.0 = Release
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|x64.ActiveCfg = Release
-		{D080B80E-B315-4CFE-8336-1CDD56937BA4}.Release|x64.Build.0 = Release
 		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84EA3FA8-8D79-4111-BF88-1FD1A883F15A}.Debug|x64.ActiveCfg = Debug|x64
@@ -89,6 +81,14 @@ Global
 		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|x64.ActiveCfg = Release|x64
 		{2EDFD763-C9CF-459E-9227-AFEBCAD33850}.Release|x64.Build.0 = Release|x64
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Debug|Any CPU.ActiveCfg = Debug
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Debug|Any CPU.Build.0 = Debug
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Debug|x64.ActiveCfg = Debug
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Debug|x64.Build.0 = Debug
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Release|Any CPU.ActiveCfg = Release
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Release|Any CPU.Build.0 = Release
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Release|x64.ActiveCfg = Release
+		{A8085DCD-0887-4424-873B-EF432ECF0F1C}.Release|x64.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

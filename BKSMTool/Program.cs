@@ -19,6 +19,7 @@
 using BKSMTool.CLI;
 using System.Windows.Forms;
 using System;
+using BKSMTool.Miscellaneous;
 
 namespace BKSMTool
 {
@@ -28,17 +29,45 @@ namespace BKSMTool
         [STAThread]
         private static void Main(string[] args)
         {
-            if (args != null && args.Length > 0)
+            try
             {
-                CommandLineInterfaceHandler.RunCli(args);
+                Application.ThreadException += GlobalExceptionHandler;
+                AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionHandler;
+
+                if (args != null && args.Length > 0)
+                {
+                    CommandLineInterfaceHandler.RunCli(args);
+                }
+                else
+                {
+                    // No arguments provided, default to GUI
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    Application.Run(new MainForm());
+                }
             }
-            else
+            catch (Exception ex)
             {
-                // No arguments provided, default to GUI
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainForm());
+                Logger.Log($"Unmanaged error at application startup: {ex.Message}\nStackTrace: {ex.StackTrace}");
+                MessageBox.Show(@"An unexpected error occurred. The application will close.", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(1);
             }
+        }
+
+        private static void GlobalExceptionHandler(object sender, System.Threading.ThreadExceptionEventArgs e)
+        {
+            Logger.Log($"UI Thread Unhandled Exception: {e.Exception.Message}\nStackTrace: {e.Exception.StackTrace}");
+            MessageBox.Show(@"An unexpected error occurred in the UI thread. The application will continue, but may be unstable.", @"UI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private static void UnhandledExceptionHandler(object sender, UnhandledExceptionEventArgs e)
+        {
+            var ex = (Exception)e.ExceptionObject;
+            Logger.Log($"Unhandled Exception: {ex.Message}\nStackTrace: {ex.StackTrace}");
+
+            if (!e.IsTerminating) return;
+            MessageBox.Show(@"A critical error occurred. The application will terminate.", @"Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Environment.Exit(1);
         }
     }
 }
