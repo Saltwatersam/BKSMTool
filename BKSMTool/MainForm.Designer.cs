@@ -69,6 +69,7 @@ namespace BKSMTool
             this.AssignTxTFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutBKSMToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip_WEMList = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem_BNKReplaceAudio = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,7 +103,6 @@ namespace BKSMTool
             this.OLVC_IsModified = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.audioSavedStateRenderer1 = new BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer();
             this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.wikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripForFileStatus.SuspendLayout();
             this.gpBox_FilterBox.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -346,6 +346,12 @@ namespace BKSMTool
             this.aboutBKSMToolToolStripMenuItem.Name = "aboutBKSMToolToolStripMenuItem";
             resources.ApplyResources(this.aboutBKSMToolToolStripMenuItem, "aboutBKSMToolToolStripMenuItem");
             this.aboutBKSMToolToolStripMenuItem.Click += new System.EventHandler(this.AboutBKSMToolToolStripMenuItem_Click);
+            // 
+            // wikiToolStripMenuItem
+            // 
+            this.wikiToolStripMenuItem.Name = "wikiToolStripMenuItem";
+            resources.ApplyResources(this.wikiToolStripMenuItem, "wikiToolStripMenuItem");
+            this.wikiToolStripMenuItem.Click += new System.EventHandler(this.wikiToolStripMenuItem_Click);
             // 
             // checkForUpdateToolStripMenuItem
             // 
@@ -758,12 +764,6 @@ namespace BKSMTool
             this.olvColumn1.ShowTextInHeader = false;
             this.olvColumn1.Sortable = false;
             resources.ApplyResources(this.olvColumn1, "olvColumn1");
-            // 
-            // wikiToolStripMenuItem
-            // 
-            this.wikiToolStripMenuItem.Name = "wikiToolStripMenuItem";
-            resources.ApplyResources(this.wikiToolStripMenuItem, "wikiToolStripMenuItem");
-            this.wikiToolStripMenuItem.Click += new System.EventHandler(this.wikiToolStripMenuItem_Click);
             // 
             // MainForm
             // 

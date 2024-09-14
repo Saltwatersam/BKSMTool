@@ -382,7 +382,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ObjectListView, Version=2.9.1.39817, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ObjectListView, Version=2.9.1.31310, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_570BA2266591C0C2F820695055CC52FD"
@@ -608,11 +608,11 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BKSMTool"
         "ProductCode" = "8:{234EA001-74CA-4DFB-B5AE-AF1B70B77EDF}"
-        "PackageCode" = "8:{29C4FC24-BACA-43B7-A44C-70C2EBCD85D4}"
+        "PackageCode" = "8:{BDB24C10-2C5E-4646-A439-9E194D597869}"
         "UpgradeCode" = "8:{47EF2135-A4A2-4647-8A98-205FFADF6253}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
