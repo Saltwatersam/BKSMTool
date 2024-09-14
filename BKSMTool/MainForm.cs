@@ -369,7 +369,6 @@ namespace BKSMTool
             AudioPlayer.PlayerStateChanged += PlayerEngine_Event_PlaybackStateChanged;
             AudioPlayer.PlayerModeChanged += PlayerEngine_Event_ModeChanged;
 
-            Properties.Settings.Default.Reload();
             _audioPlayerEngine.Mode = Enum.TryParse(Properties.Settings.Default.PlayerMode,out PlayerMode mode) ? mode : PlayerMode.NoLoop;
             _audioPlayerEngine.Volume = Properties.Settings.Default.Volume;
 
