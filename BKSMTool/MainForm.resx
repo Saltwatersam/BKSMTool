@@ -606,7 +606,7 @@
     <value>player_lbl_AudioPosition</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioPosition.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioPosition, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioPosition, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioPosition.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -639,7 +639,7 @@
     <value>player_lbl_AudioDuration</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioDuration.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioDuration, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioDuration, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioDuration.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -663,7 +663,7 @@
     <value>player_TrackBar_AudioPosition</value>
   </data>
   <data name="&gt;&gt;player_TrackBar_AudioPosition.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.PlayerTrackBarAudioPosition, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.PlayerTrackBarAudioPosition, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;player_TrackBar_AudioPosition.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -696,7 +696,7 @@
     <value>notSelectable_Btn_PlayerMode</value>
   </data>
   <data name="&gt;&gt;notSelectable_Btn_PlayerMode.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;notSelectable_Btn_PlayerMode.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -729,7 +729,7 @@
     <value>notSelectable_btn_PlayerPreviousAudio</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerPreviousAudio.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerPreviousAudio.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -762,7 +762,7 @@
     <value>notSelectable_btn_PlayerNextAudio</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerNextAudio.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerNextAudio.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -795,7 +795,7 @@
     <value>notSelectable_btn_PlayerPlayPause</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerPlayPause.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.NotSelectableButton, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;notSelectable_btn_PlayerPlayPause.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -831,7 +831,7 @@
     <value>_playerHidableTrackbarVolume</value>
   </data>
   <data name="&gt;&gt;_playerHidableTrackbarVolume.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;_playerHidableTrackbarVolume.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -864,7 +864,7 @@
     <value>player_lbl_AudioName</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioName.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioName, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.PlayerLabelAudioName, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;player_lbl_AudioName.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1038,7 +1038,7 @@
     <value>olv_AudioListView</value>
   </data>
   <data name="&gt;&gt;olv_AudioListView.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;olv_AudioListView.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -7083,67 +7083,67 @@
     <value>OLVC_AudioState</value>
   </data>
   <data name="&gt;&gt;OLVC_AudioState.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;headerFormatStyle2.Name" xml:space="preserve">
     <value>headerFormatStyle2</value>
   </data>
   <data name="&gt;&gt;headerFormatStyle2.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.HeaderFormatStyle, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.HeaderFormatStyle, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;SoundPlayerStateRenderer.Name" xml:space="preserve">
     <value>SoundPlayerStateRenderer</value>
   </data>
   <data name="&gt;&gt;SoundPlayerStateRenderer.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.SoundPlayerStateRenderer, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.SoundPlayerStateRenderer, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;OLVC_ID.Name" xml:space="preserve">
     <value>OLVC_ID</value>
   </data>
   <data name="&gt;&gt;OLVC_ID.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;headerFormatStyle1.Name" xml:space="preserve">
     <value>headerFormatStyle1</value>
   </data>
   <data name="&gt;&gt;headerFormatStyle1.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.HeaderFormatStyle, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.HeaderFormatStyle, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;OLVC_RelatedName.Name" xml:space="preserve">
     <value>OLVC_RelatedName</value>
   </data>
   <data name="&gt;&gt;OLVC_RelatedName.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;OLVC_DURATION.Name" xml:space="preserve">
     <value>OLVC_DURATION</value>
   </data>
   <data name="&gt;&gt;OLVC_DURATION.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;OLVC_DataArraySizeAsString.Name" xml:space="preserve">
     <value>OLVC_DataArraySizeAsString</value>
   </data>
   <data name="&gt;&gt;OLVC_DataArraySizeAsString.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;OLVC_IsModified.Name" xml:space="preserve">
     <value>OLVC_IsModified</value>
   </data>
   <data name="&gt;&gt;OLVC_IsModified.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;audioSavedStateRenderer1.Name" xml:space="preserve">
     <value>audioSavedStateRenderer1</value>
   </data>
   <data name="&gt;&gt;audioSavedStateRenderer1.Type" xml:space="preserve">
-    <value>BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer, BKSMTool, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer, BKSMTool, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;olvColumn1.Name" xml:space="preserve">
     <value>olvColumn1</value>
   </data>
   <data name="&gt;&gt;olvColumn1.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31442, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.31568, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
