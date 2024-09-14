@@ -13,6 +13,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,11 +26,9 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -100,6 +100,30 @@
     <Compile Include="Controls\AdvancedTrackbar.designer.cs">
       <DependentUpon>AdvancedTrackbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ModalForm\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ModalForm\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModalForm\NoUpdateFormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ModalForm\NoUpdateFormManual.Designer.cs">
+      <DependentUpon>NoUpdateFormManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModalForm\UpdateFormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ModalForm\UpdateFormManual.Designer.cs">
+      <DependentUpon>UpdateFormManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModalForm\UpdateFormAutomatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ModalForm\UpdateFormAutomatic.Designer.cs">
+      <DependentUpon>UpdateFormAutomatic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\NotSelectableButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -165,16 +189,28 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\ConfigManager.cs" />
     <Compile Include="Miscellaneous\Logger.cs" />
     <Compile Include="Miscellaneous\NativeMethods.cs" />
     <Compile Include="Miscellaneous\ProgressQueue.cs" />
     <Compile Include="Miscellaneous\UndoRedoManager.cs" />
+    <Compile Include="Miscellaneous\VersionChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Controls\AdvancedTrackbar.resx">
       <DependentUpon>AdvancedTrackbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModalForm\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModalForm\NoUpdateFormManual.resx">
+      <DependentUpon>NoUpdateFormManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModalForm\UpdateFormManual.resx">
+      <DependentUpon>UpdateFormManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModalForm\UpdateFormAutomatic.resx">
+      <DependentUpon>UpdateFormAutomatic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\PlayerEngine\PlayerHiddableTrackbarVolume.resx">
       <DependentUpon>PlayerHiddableTrackbarVolume.cs</DependentUpon>
@@ -281,9 +317,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>powershell -Command "(Get-Content '$(ProjectDir)Properties\AssemblyInfo.cs' | Select-String 'AssemblyVersion' | ForEach-Object { $_.Line -replace '[^0-9.]', '' }) | Out-File '$(ProjectDir)Version.txt' -NoNewline"
+    <PostBuildEvent>powershell -Command "(Get-Content '$(ProjectDir)Properties\AssemblyInfo.cs' | Select-String 'AssemblyVersion' | ForEach-Object { $_.Line -replace '[^0-9.]', '' }) | Out-File '$(ProjectDir)Version.txt' -NoNewline -Encoding UTF8"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>

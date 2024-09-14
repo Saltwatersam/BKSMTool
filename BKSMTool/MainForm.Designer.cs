@@ -33,17 +33,15 @@ namespace BKSMTool
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle7 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle8 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle9 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle10 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle11 = new BrightIdeasSoftware.HeaderStateStyle();
-            BrightIdeasSoftware.HeaderStateStyle headerStateStyle12 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle1 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle2 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle3 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle4 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle5 = new BrightIdeasSoftware.HeaderStateStyle();
+            BrightIdeasSoftware.HeaderStateStyle headerStateStyle6 = new BrightIdeasSoftware.HeaderStateStyle();
             this.statusStripForFileStatus = new System.Windows.Forms.StatusStrip();
             this.toolStrip_ProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStrip_LabelForStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.headerFormatStyle2 = new BrightIdeasSoftware.HeaderFormatStyle();
-            this.headerFormatStyle1 = new BrightIdeasSoftware.HeaderFormatStyle();
             this.gpBox_FilterBox = new System.Windows.Forms.GroupBox();
             this.txtbox_FilterBox = new System.Windows.Forms.TextBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -69,6 +67,9 @@ namespace BKSMTool
             this.extractAllAudiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.AssignTxTFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutBKSMToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip_WEMList = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem_BNKReplaceAudio = new System.Windows.Forms.ToolStripMenuItem();
             this.separator17 = new System.Windows.Forms.ToolStripSeparator();
@@ -76,9 +77,10 @@ namespace BKSMTool
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem_BNKExtractAllAudio = new System.Windows.Forms.ToolStripMenuItem();
             this.FormToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this._playerHidableTrackbarVolume = new BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_NumberOfAudios = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.player_lbl_AudioPosition = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioPosition();
             this.player_lbl_AudioDuration = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioDuration();
             this.player_TrackBar_AudioPosition = new BKSMTool.Controls.PlayerEngine.PlayerTrackBarAudioPosition();
@@ -86,30 +88,29 @@ namespace BKSMTool
             this.notSelectable_btn_PlayerPreviousAudio = new BKSMTool.Controls.NotSelectableButton();
             this.notSelectable_btn_PlayerNextAudio = new BKSMTool.Controls.NotSelectableButton();
             this.notSelectable_btn_PlayerPlayPause = new BKSMTool.Controls.NotSelectableButton();
+            this._playerHidableTrackbarVolume = new BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume();
             this.player_lbl_AudioName = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioName();
-            this.lbl_NumberOfAudios = new System.Windows.Forms.Label();
             this.olv_AudioListView = new BrightIdeasSoftware.ObjectListView();
             this.OLVC_AudioState = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.headerFormatStyle2 = new BrightIdeasSoftware.HeaderFormatStyle();
             this.SoundPlayerStateRenderer = new BKSMTool.Controls.PlayerEngine.SoundPlayerStateRenderer();
             this.OLVC_ID = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.headerFormatStyle1 = new BrightIdeasSoftware.HeaderFormatStyle();
             this.OLVC_RelatedName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.OLVC_DURATION = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.OLVC_DataArraySizeAsString = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.OLVC_IsModified = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.audioSavedStateRenderer1 = new BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutBKSMToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripForFileStatus.SuspendLayout();
             this.gpBox_FilterBox.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.contextMenuStrip_WEMList.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStripForFileStatus
@@ -141,33 +142,6 @@ namespace BKSMTool
             this.toolStrip_LabelForStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStrip_LabelForStatus.Name = "toolStrip_LabelForStatus";
             resources.ApplyResources(this.toolStrip_LabelForStatus, "toolStrip_LabelForStatus");
-            // 
-            // headerFormatStyle2
-            // 
-            headerStateStyle7.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle7.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Hot = headerStateStyle7;
-            headerStateStyle8.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle8.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Normal = headerStateStyle8;
-            headerStateStyle9.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle9.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            this.headerFormatStyle2.Pressed = headerStateStyle9;
-            // 
-            // headerFormatStyle1
-            // 
-            headerStateStyle10.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle10.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle10.FrameWidth = 2F;
-            this.headerFormatStyle1.Hot = headerStateStyle10;
-            headerStateStyle11.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle11.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle11.FrameWidth = 2F;
-            this.headerFormatStyle1.Normal = headerStateStyle11;
-            headerStateStyle12.BackColor = System.Drawing.Color.Gray;
-            headerStateStyle12.FrameColor = System.Drawing.SystemColors.AppWorkspace;
-            headerStateStyle12.FrameWidth = 2F;
-            this.headerFormatStyle1.Pressed = headerStateStyle12;
             // 
             // gpBox_FilterBox
             // 
@@ -358,6 +332,27 @@ namespace BKSMTool
             this.AssignTxTFileToolStripMenuItem.Name = "AssignTxTFileToolStripMenuItem";
             this.AssignTxTFileToolStripMenuItem.Click += new System.EventHandler(this.Assign_Event_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutBKSMToolToolStripMenuItem,
+            this.wikiToolStripMenuItem,
+            this.checkForUpdateToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            // 
+            // aboutBKSMToolToolStripMenuItem
+            // 
+            this.aboutBKSMToolToolStripMenuItem.Name = "aboutBKSMToolToolStripMenuItem";
+            resources.ApplyResources(this.aboutBKSMToolToolStripMenuItem, "aboutBKSMToolToolStripMenuItem");
+            this.aboutBKSMToolToolStripMenuItem.Click += new System.EventHandler(this.AboutBKSMToolToolStripMenuItem_Click);
+            // 
+            // checkForUpdateToolStripMenuItem
+            // 
+            this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
+            resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
+            this.checkForUpdateToolStripMenuItem.Click += new System.EventHandler(this.CheckForUpdateToolStripMenuItem_Click);
+            // 
             // contextMenuStrip_WEMList
             // 
             this.contextMenuStrip_WEMList.AllowDrop = true;
@@ -404,15 +399,6 @@ namespace BKSMTool
             resources.ApplyResources(this.toolStripMenuItem_BNKExtractAllAudio, "toolStripMenuItem_BNKExtractAllAudio");
             this.toolStripMenuItem_BNKExtractAllAudio.Click += new System.EventHandler(this.ExtractAllAudios_Event_Click);
             // 
-            // _playerHidableTrackbarVolume
-            // 
-            resources.ApplyResources(this._playerHidableTrackbarVolume, "_playerHidableTrackbarVolume");
-            this._playerHidableTrackbarVolume.BackColor = System.Drawing.Color.Transparent;
-            this._playerHidableTrackbarVolume.Name = "_playerHidableTrackbarVolume";
-            this._playerHidableTrackbarVolume.TabStop = false;
-            this.FormToolTip.SetToolTip(this._playerHidableTrackbarVolume, resources.GetString("_playerHidableTrackbarVolume.ToolTip"));
-            this._playerHidableTrackbarVolume.Volume = 0.5F;
-            // 
             // panel1
             // 
             this.panel1.AllowDrop = true;
@@ -441,6 +427,24 @@ namespace BKSMTool
             this.panel3.Name = "panel3";
             this.panel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.panel3.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
+            // 
+            // lbl_NumberOfAudios
+            // 
+            this.lbl_NumberOfAudios.AllowDrop = true;
+            resources.ApplyResources(this.lbl_NumberOfAudios, "lbl_NumberOfAudios");
+            this.lbl_NumberOfAudios.Name = "lbl_NumberOfAudios";
+            this.lbl_NumberOfAudios.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.lbl_NumberOfAudios.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
+            // 
+            // panel2
+            // 
+            this.panel2.AllowDrop = true;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Name = "panel2";
+            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             // 
             // player_lbl_AudioPosition
             // 
@@ -509,19 +513,20 @@ namespace BKSMTool
             this.notSelectable_btn_PlayerPlayPause.UseVisualStyleBackColor = true;
             this.notSelectable_btn_PlayerPlayPause.Click += new System.EventHandler(this.PlayerPlayPause_Event_Click);
             // 
+            // _playerHidableTrackbarVolume
+            // 
+            resources.ApplyResources(this._playerHidableTrackbarVolume, "_playerHidableTrackbarVolume");
+            this._playerHidableTrackbarVolume.BackColor = System.Drawing.Color.Transparent;
+            this._playerHidableTrackbarVolume.Name = "_playerHidableTrackbarVolume";
+            this._playerHidableTrackbarVolume.TabStop = false;
+            this.FormToolTip.SetToolTip(this._playerHidableTrackbarVolume, resources.GetString("_playerHidableTrackbarVolume.ToolTip"));
+            this._playerHidableTrackbarVolume.Volume = 0.5F;
+            // 
             // player_lbl_AudioName
             // 
             resources.ApplyResources(this.player_lbl_AudioName, "player_lbl_AudioName");
             this.player_lbl_AudioName.BackColor = System.Drawing.Color.Transparent;
             this.player_lbl_AudioName.Name = "player_lbl_AudioName";
-            // 
-            // lbl_NumberOfAudios
-            // 
-            this.lbl_NumberOfAudios.AllowDrop = true;
-            resources.ApplyResources(this.lbl_NumberOfAudios, "lbl_NumberOfAudios");
-            this.lbl_NumberOfAudios.Name = "lbl_NumberOfAudios";
-            this.lbl_NumberOfAudios.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
-            this.lbl_NumberOfAudios.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             // 
             // olv_AudioListView
             // 
@@ -609,6 +614,18 @@ namespace BKSMTool
             resources.ApplyResources(this.OLVC_AudioState, "OLVC_AudioState");
             this.OLVC_AudioState.UseFiltering = false;
             // 
+            // headerFormatStyle2
+            // 
+            headerStateStyle1.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle1.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Hot = headerStateStyle1;
+            headerStateStyle2.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle2.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Normal = headerStateStyle2;
+            headerStateStyle3.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle3.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            this.headerFormatStyle2.Pressed = headerStateStyle3;
+            // 
             // SoundPlayerStateRenderer
             // 
             this.SoundPlayerStateRenderer.ButtonSize = new System.Drawing.Size(24, 24);
@@ -638,6 +655,21 @@ namespace BKSMTool
             this.OLVC_ID.MinimumWidth = 80;
             this.OLVC_ID.Sortable = false;
             resources.ApplyResources(this.OLVC_ID, "OLVC_ID");
+            // 
+            // headerFormatStyle1
+            // 
+            headerStateStyle4.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle4.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle4.FrameWidth = 2F;
+            this.headerFormatStyle1.Hot = headerStateStyle4;
+            headerStateStyle5.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle5.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle5.FrameWidth = 2F;
+            this.headerFormatStyle1.Normal = headerStateStyle5;
+            headerStateStyle6.BackColor = System.Drawing.Color.Gray;
+            headerStateStyle6.FrameColor = System.Drawing.SystemColors.AppWorkspace;
+            headerStateStyle6.FrameWidth = 2F;
+            this.headerFormatStyle1.Pressed = headerStateStyle6;
             // 
             // OLVC_RelatedName
             // 
@@ -706,16 +738,6 @@ namespace BKSMTool
             resources.ApplyResources(this.OLVC_IsModified, "OLVC_IsModified");
             this.OLVC_IsModified.UseFiltering = false;
             // 
-            // panel2
-            // 
-            this.panel2.AllowDrop = true;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Name = "panel2";
-            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
-            this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
-            // 
             // olvColumn1
             // 
             this.olvColumn1.AspectName = "PlaybackState";
@@ -737,23 +759,11 @@ namespace BKSMTool
             this.olvColumn1.Sortable = false;
             resources.ApplyResources(this.olvColumn1, "olvColumn1");
             // 
-            // helpToolStripMenuItem
+            // wikiToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutBKSMToolToolStripMenuItem,
-            this.checkForUpdateToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
-            // 
-            // aboutBKSMToolToolStripMenuItem
-            // 
-            this.aboutBKSMToolToolStripMenuItem.Name = "aboutBKSMToolToolStripMenuItem";
-            resources.ApplyResources(this.aboutBKSMToolToolStripMenuItem, "aboutBKSMToolToolStripMenuItem");
-            // 
-            // checkForUpdateToolStripMenuItem
-            // 
-            this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
-            resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
+            this.wikiToolStripMenuItem.Name = "wikiToolStripMenuItem";
+            resources.ApplyResources(this.wikiToolStripMenuItem, "wikiToolStripMenuItem");
+            this.wikiToolStripMenuItem.Click += new System.EventHandler(this.wikiToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -783,9 +793,9 @@ namespace BKSMTool
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -855,6 +865,7 @@ namespace BKSMTool
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutBKSMToolToolStripMenuItem;
         private ToolStripMenuItem checkForUpdateToolStripMenuItem;
+        private ToolStripMenuItem wikiToolStripMenuItem;
     }
 }
 

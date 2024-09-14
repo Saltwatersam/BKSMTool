@@ -29,6 +29,10 @@ namespace BKSMTool
         [STAThread]
         private static void Main(string[] args)
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            VersionChecker.AutomaticCheckAvailableUpdate().GetAwaiter().GetResult();
+
             try
             {
                 Application.ThreadException += GlobalExceptionHandler;
@@ -41,8 +45,6 @@ namespace BKSMTool
                 else
                 {
                     // No arguments provided, default to GUI
-                    Application.EnableVisualStyles();
-                    Application.SetCompatibleTextRenderingDefault(false);
                     Application.Run(new MainForm());
                 }
             }

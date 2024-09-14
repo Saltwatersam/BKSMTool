@@ -36,6 +36,7 @@ using System.Text;
 using BKSMTool.audio_player_converter;
 using BKSMTool.Files;
 using BKSMTool.Controls;
+using BKSMTool.Controls.ModalForm;
 
 namespace BKSMTool
 {
@@ -368,10 +369,9 @@ namespace BKSMTool
             AudioPlayer.PlayerStateChanged += PlayerEngine_Event_PlaybackStateChanged;
             AudioPlayer.PlayerModeChanged += PlayerEngine_Event_ModeChanged;
 
-            // Load the saved configuration for the audio player (mode and volume).
-            var (mode, volume) = ConfigManager.LoadConfig();
-            _audioPlayerEngine.Mode = mode;
-            _audioPlayerEngine.Volume = volume;
+            Properties.Settings.Default.Reload();
+            _audioPlayerEngine.Mode = Enum.TryParse(Properties.Settings.Default.PlayerMode,out PlayerMode mode) ? mode : PlayerMode.NoLoop;
+            _audioPlayerEngine.Volume = Properties.Settings.Default.Volume;
 
             // Set focus to the audio list view after initialization.
             olv_AudioListView.Select();
@@ -822,6 +822,30 @@ namespace BKSMTool
             {
                 MessageBox.Show(@"Application only supports one file at a time.", @"Info", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+        }
+        #endregion
+
+        #region Check for Update
+        private async void CheckForUpdateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            await VersionChecker.CheckAvailableUpdate();
+        }
+        #endregion
+
+        #region About
+        private void AboutBKSMToolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var aboutForm = new AboutForm())
+            {
+                aboutForm.ShowDialog();
+            }
+        }
+        #endregion
+
+        #region Wiki
+        private void wikiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Saltwatersam/BKSMTool/wiki");
         }
         #endregion
 
@@ -1470,7 +1494,9 @@ namespace BKSMTool
         private async Task Exit()
         {
             await CloseFileAsync();
-            ConfigManager.SaveConfig(_audioPlayerEngine.Mode, _audioPlayerEngine.Volume);
+            Properties.Settings.Default.PlayerMode = _audioPlayerEngine.Mode.ToString();
+            Properties.Settings.Default.Volume = _audioPlayerEngine.Volume;
+            Properties.Settings.Default.Save();
             Application.Exit();
         }
         #endregion
