@@ -29,7 +29,6 @@ This application uses the BASS audio library, which is a proprietary library pro
 
 **GUI**
 
-![https://i.imgur.com/Wp9zDLb.png](https://i.imgur.com/Wp9zDLb.png)
 - [x] List all local audio files (.*wem) within *.bnk files by their ID
 - [x] Read/Play local audio files (.*wem) inside *.bnk
 - [x] Extract and save locally selected audio file (.*wem) in different formats:
@@ -45,10 +44,13 @@ This application uses the BASS audio library, which is a proprietary library pro
 - [x] Replace selected audio file within *.bnk with a local audio file (.*wem, .*wav, *.mp3, *.ogg)
 - [x] .txt file assignment to add event names corresponding to audio files ID (works for the game Trove)
 
+![https://i.imgur.com/Wp9zDLb.png](https://i.imgur.com/Wp9zDLb.png)
+
 **CLI**
 
-![https://i.imgur.com/4xzwufx.png](https://i.imgur.com/4xzwufx.png)
 - [x] Allow extraction through command line interface (CLI)
+
+![https://i.imgur.com/4xzwufx.png](https://i.imgur.com/4xzwufx.png)
 
 ## Getting Started
 
