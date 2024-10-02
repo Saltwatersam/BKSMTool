@@ -21,6 +21,7 @@ using System.Linq;
 using System.Text;
 using System;
 using System.IO;
+using System.Reflection;
 
 namespace BKSMTool.Miscellaneous
 {
@@ -41,14 +42,14 @@ namespace BKSMTool.Miscellaneous
         private static string GetLogFilePath()
         {
             var appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var logDirectory = Path.Combine(appDataFolder, "BKSMTool");
+            var logDirectory = Path.Combine(appDataFolder, Assembly.GetExecutingAssembly().GetName().Name);
 
             if (!Directory.Exists(logDirectory))
             {
                 Directory.CreateDirectory(logDirectory);
             }
 
-            return Path.Combine(logDirectory, "BKSMTool.log");
+            return Path.Combine(logDirectory, Assembly.GetExecutingAssembly().GetName().Name + ".log");
         }
 
         #endregion

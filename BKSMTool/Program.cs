@@ -29,10 +29,11 @@ namespace BKSMTool
         [STAThread]
         private static void Main(string[] args)
         {
-            Properties.Settings.Default.Reload();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (Properties.Settings.Default.AutomaticCheckForUpdate)
+
+            UserConfigs.Load();
+            if (UserConfigs.AutomaticCheckForUpdate)
             {
                 VersionChecker.AutomaticCheckAvailableUpdate().GetAwaiter().GetResult();
             }

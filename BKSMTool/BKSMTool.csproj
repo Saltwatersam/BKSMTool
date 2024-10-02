@@ -29,6 +29,7 @@
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -189,6 +190,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Miscellaneous\UserConfigs.cs" />
     <Compile Include="Miscellaneous\Logger.cs" />
     <Compile Include="Miscellaneous\NativeMethods.cs" />
     <Compile Include="Miscellaneous\ProgressQueue.cs" />

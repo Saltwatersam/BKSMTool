@@ -19,6 +19,7 @@
 
 using System;
 using System.Windows.Forms;
+using BKSMTool.Miscellaneous;
 
 namespace BKSMTool.Controls.ModalForm
 {
@@ -57,7 +58,7 @@ namespace BKSMTool.Controls.ModalForm
             InitializeComponent();
 
             // Set the button text based on the status of automatic update checks
-            EnableDisableAutomaticUpdateCheck.Text = Properties.Settings.Default.AutomaticCheckForUpdate
+            EnableDisableAutomaticUpdateCheck.Text = UserConfigs.AutomaticCheckForUpdate
                 ? @"Disable automatic update checks"
                 : @"Enable automatic update checks";
         }
@@ -71,10 +72,10 @@ namespace BKSMTool.Controls.ModalForm
         private void EnableDisableAutoUpdateButton_Click(object sender, EventArgs e)
         {
             // Toggle the automatic update check setting
-            Properties.Settings.Default.AutomaticCheckForUpdate = !Properties.Settings.Default.AutomaticCheckForUpdate;
+            UserConfigs.AutomaticCheckForUpdate = !UserConfigs.AutomaticCheckForUpdate;
 
             // Update the button text based on the new state
-            EnableDisableAutomaticUpdateCheck.Text = Properties.Settings.Default.AutomaticCheckForUpdate
+            EnableDisableAutomaticUpdateCheck.Text = UserConfigs.AutomaticCheckForUpdate
                 ? @"Disable automatic update checks"
                 : @"Enable automatic update checks";
         }

@@ -369,8 +369,8 @@ namespace BKSMTool
             AudioPlayer.PlayerStateChanged += PlayerEngine_Event_PlaybackStateChanged;
             AudioPlayer.PlayerModeChanged += PlayerEngine_Event_ModeChanged;
 
-            _audioPlayerEngine.Mode = Enum.TryParse(Properties.Settings.Default.PlayerMode,out PlayerMode mode) ? mode : PlayerMode.NoLoop;
-            _audioPlayerEngine.Volume = Properties.Settings.Default.Volume;
+            _audioPlayerEngine.Mode = UserConfigs.PlayerMode;
+            _audioPlayerEngine.Volume = UserConfigs.Volume;
 
             // Set focus to the audio list view after initialization.
             olv_AudioListView.Select();
@@ -1493,9 +1493,9 @@ namespace BKSMTool
         private async Task Exit()
         {
             await CloseFileAsync();
-            Properties.Settings.Default.PlayerMode = _audioPlayerEngine.Mode.ToString();
-            Properties.Settings.Default.Volume = _audioPlayerEngine.Volume;
-            Properties.Settings.Default.Save();
+            UserConfigs.PlayerMode = _audioPlayerEngine.Mode;
+            UserConfigs.Volume = _audioPlayerEngine.Volume;
+            UserConfigs.Save();
             Application.Exit();
         }
         #endregion

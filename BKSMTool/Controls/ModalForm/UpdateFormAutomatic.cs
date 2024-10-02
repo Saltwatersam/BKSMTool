@@ -19,6 +19,7 @@
 
 using System;
 using System.Windows.Forms;
+using BKSMTool.Miscellaneous;
 
 namespace BKSMTool.Controls.ModalForm
 {
@@ -65,7 +66,7 @@ namespace BKSMTool.Controls.ModalForm
         private void DontRemindButton_Click(object sender, EventArgs e)
         {
             // Disable automatic update checks by updating the user settings
-            Properties.Settings.Default.AutomaticCheckForUpdate = false;
+            UserConfigs.AutomaticCheckForUpdate = false;
 
             // Set the dialog result to cancel to indicate the user chose not to be reminded again
             DialogResult = DialogResult.Cancel;
