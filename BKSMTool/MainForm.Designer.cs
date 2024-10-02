@@ -78,10 +78,9 @@ namespace BKSMTool
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem_BNKExtractAllAudio = new System.Windows.Forms.ToolStripMenuItem();
             this.FormToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this._playerHidableTrackbarVolume = new BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbl_NumberOfAudios = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.player_lbl_AudioPosition = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioPosition();
             this.player_lbl_AudioDuration = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioDuration();
             this.player_TrackBar_AudioPosition = new BKSMTool.Controls.PlayerEngine.PlayerTrackBarAudioPosition();
@@ -89,8 +88,8 @@ namespace BKSMTool
             this.notSelectable_btn_PlayerPreviousAudio = new BKSMTool.Controls.NotSelectableButton();
             this.notSelectable_btn_PlayerNextAudio = new BKSMTool.Controls.NotSelectableButton();
             this.notSelectable_btn_PlayerPlayPause = new BKSMTool.Controls.NotSelectableButton();
-            this._playerHidableTrackbarVolume = new BKSMTool.Controls.PlayerEngine.PlayerHidableTrackbarVolume();
             this.player_lbl_AudioName = new BKSMTool.Controls.PlayerEngine.PlayerLabelAudioName();
+            this.lbl_NumberOfAudios = new System.Windows.Forms.Label();
             this.olv_AudioListView = new BrightIdeasSoftware.ObjectListView();
             this.OLVC_AudioState = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.headerFormatStyle2 = new BrightIdeasSoftware.HeaderFormatStyle();
@@ -102,6 +101,7 @@ namespace BKSMTool
             this.OLVC_DataArraySizeAsString = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.OLVC_IsModified = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.audioSavedStateRenderer1 = new BKSMTool.Controls.PlayerEngine.AudioSavedStateRenderer();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.olvColumn1 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.statusStripForFileStatus.SuspendLayout();
             this.gpBox_FilterBox.SuspendLayout();
@@ -109,8 +109,8 @@ namespace BKSMTool
             this.contextMenuStrip_WEMList.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStripForFileStatus
@@ -405,6 +405,15 @@ namespace BKSMTool
             resources.ApplyResources(this.toolStripMenuItem_BNKExtractAllAudio, "toolStripMenuItem_BNKExtractAllAudio");
             this.toolStripMenuItem_BNKExtractAllAudio.Click += new System.EventHandler(this.ExtractAllAudios_Event_Click);
             // 
+            // _playerHidableTrackbarVolume
+            // 
+            resources.ApplyResources(this._playerHidableTrackbarVolume, "_playerHidableTrackbarVolume");
+            this._playerHidableTrackbarVolume.BackColor = System.Drawing.Color.Transparent;
+            this._playerHidableTrackbarVolume.Name = "_playerHidableTrackbarVolume";
+            this._playerHidableTrackbarVolume.TabStop = false;
+            this.FormToolTip.SetToolTip(this._playerHidableTrackbarVolume, resources.GetString("_playerHidableTrackbarVolume.ToolTip"));
+            this._playerHidableTrackbarVolume.Volume = 0.5F;
+            // 
             // panel1
             // 
             this.panel1.AllowDrop = true;
@@ -433,24 +442,6 @@ namespace BKSMTool
             this.panel3.Name = "panel3";
             this.panel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.panel3.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
-            // 
-            // lbl_NumberOfAudios
-            // 
-            this.lbl_NumberOfAudios.AllowDrop = true;
-            resources.ApplyResources(this.lbl_NumberOfAudios, "lbl_NumberOfAudios");
-            this.lbl_NumberOfAudios.Name = "lbl_NumberOfAudios";
-            this.lbl_NumberOfAudios.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
-            this.lbl_NumberOfAudios.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
-            // 
-            // panel2
-            // 
-            this.panel2.AllowDrop = true;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Name = "panel2";
-            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
-            this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             // 
             // player_lbl_AudioPosition
             // 
@@ -519,20 +510,19 @@ namespace BKSMTool
             this.notSelectable_btn_PlayerPlayPause.UseVisualStyleBackColor = true;
             this.notSelectable_btn_PlayerPlayPause.Click += new System.EventHandler(this.PlayerPlayPause_Event_Click);
             // 
-            // _playerHidableTrackbarVolume
-            // 
-            resources.ApplyResources(this._playerHidableTrackbarVolume, "_playerHidableTrackbarVolume");
-            this._playerHidableTrackbarVolume.BackColor = System.Drawing.Color.Transparent;
-            this._playerHidableTrackbarVolume.Name = "_playerHidableTrackbarVolume";
-            this._playerHidableTrackbarVolume.TabStop = false;
-            this.FormToolTip.SetToolTip(this._playerHidableTrackbarVolume, resources.GetString("_playerHidableTrackbarVolume.ToolTip"));
-            this._playerHidableTrackbarVolume.Volume = 0.5F;
-            // 
             // player_lbl_AudioName
             // 
             resources.ApplyResources(this.player_lbl_AudioName, "player_lbl_AudioName");
             this.player_lbl_AudioName.BackColor = System.Drawing.Color.Transparent;
             this.player_lbl_AudioName.Name = "player_lbl_AudioName";
+            // 
+            // lbl_NumberOfAudios
+            // 
+            this.lbl_NumberOfAudios.AllowDrop = true;
+            resources.ApplyResources(this.lbl_NumberOfAudios, "lbl_NumberOfAudios");
+            this.lbl_NumberOfAudios.Name = "lbl_NumberOfAudios";
+            this.lbl_NumberOfAudios.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.lbl_NumberOfAudios.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             // 
             // olv_AudioListView
             // 
@@ -744,6 +734,16 @@ namespace BKSMTool
             resources.ApplyResources(this.OLVC_IsModified, "OLVC_IsModified");
             this.OLVC_IsModified.UseFiltering = false;
             // 
+            // panel2
+            // 
+            this.panel2.AllowDrop = true;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Name = "panel2";
+            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
+            // 
             // olvColumn1
             // 
             this.olvColumn1.AspectName = "PlaybackState";
@@ -793,9 +793,9 @@ namespace BKSMTool
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.olv_AudioListView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

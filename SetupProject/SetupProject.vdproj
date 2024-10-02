@@ -382,7 +382,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ObjectListView, Version=2.9.1.42516, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:ObjectListView, Version=2.9.1.155, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
                     "_570BA2266591C0C2F820695055CC52FD"
@@ -607,15 +607,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BKSMTool"
-        "ProductCode" = "8:{1439BFC7-9AC4-48B8-A1D6-461BE2FFFAA5}"
-        "PackageCode" = "8:{B709F0CA-A712-4465-BFDD-E4E09C431BAF}"
+        "ProductCode" = "8:{F36A237A-2F01-45F3-8CF2-C7678C3740D8}"
+        "PackageCode" = "8:{93A7E6B8-70EF-423B-87C1-FE55088BC0F5}"
         "UpgradeCode" = "8:{47EF2135-A4A2-4647-8A98-205FFADF6253}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.6"
+        "ProductVersion" = "8:1.0.7"
         "Manufacturer" = "8:Saltwatersam"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
